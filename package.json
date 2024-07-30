@@ -1,0 +1,14 @@
+{
+  "name": "automation-project",
+  "version": "1.0.0",
+  "description": "Este projeto tem como objetivo automatizar testes para o site [Automation Exercise](https://automationexercise.com/), utilizando os casos de teste disponíveis [aqui](https://automationexercise.com/test_cases). A automação é implementada com Cypress, uma ferramenta poderosa para testes de front-end.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.13.1"
+  }
+}
