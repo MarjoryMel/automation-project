@@ -1,0 +1,11 @@
+{
+    "name": "John Doe",
+    "email": "ultimoteste@example.com",
+    "password": "securePassword123",
+    "birthDate": {
+      "day": "1",
+      "month": "1",
+      "year": "1990"
+    }
+}
+  
