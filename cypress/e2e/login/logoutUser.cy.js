@@ -17,7 +17,8 @@ describe('Logout Login', () => {
           .click()
 
         // Verify 'Login to your account' is visible
-        cy.contains('Login to your account').should('be.visible')
+        cy.contains('Login to your account')
+          .should('be.visible')
     })
 
     it.only('the user enters their incorrect email and password', () => {
