@@ -1,0 +1,23 @@
+{
+    "name": "Test",
+    "email": "vabafik330@mvpalace.com",
+    "password": "test123",
+    "birthDate": {
+      "day": "4",
+      "month": "4",
+      "year": "2001"
+    },
+    "addressInfo": {
+        "firstName": "Test",
+        "lastName": "Test",
+        "company": "Example Corp",
+        "address": "123 Main St",
+        "address2": "Apt 4B",
+        "country": "India",
+        "state": "Maharashtra",
+        "city": "Mumbai",
+        "zipcode": "400001",
+        "mobileNumber": "+919999999"
+      }
+}
+  
