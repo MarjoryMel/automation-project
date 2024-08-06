@@ -1,4 +1,4 @@
-describe('Valid Login', () => {
+describe('Logout Login', () => {
 
     it('checks if the home page is visible successfully', () => {
         // Navigate to the URL
@@ -17,8 +17,7 @@ describe('Valid Login', () => {
           .click()
 
         // Verify 'Login to your account' is visible
-        cy.contains('Login to your account')
-          .should('be.visible')
+        cy.contains('Login to your account').should('be.visible')
     })
 
     it.only('the user enters their incorrect email and password', () => {
@@ -34,7 +33,10 @@ describe('Valid Login', () => {
             cy.get(':nth-child(10) > a').should('be.visible')
         })
 
-        //9. Click 'Delete Account' button
-        //10. Verify that 'ACCOUNT DELETED!' is visible
+        //Click 'Logout' button
+        cy.get('.shop-menu > .nav > :nth-child(4) > a').click()
+
+       //Verify that user is navigated to login page
+       cy.contains('Login to your account').should('be.visible')
     })
 })
