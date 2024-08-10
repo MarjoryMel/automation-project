@@ -1,4 +1,4 @@
-describe('Invalid Register', () => {
+describe('Register User with existing email', () => {
 
     it('checks if the home page is visible successfully', () => {
         // Navigate to the URL

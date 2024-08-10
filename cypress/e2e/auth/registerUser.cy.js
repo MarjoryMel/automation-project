@@ -25,7 +25,7 @@ describe('Register User', () => {
         cy.visit('https://automationexercise.com/login')
 
         // Use data from the fixture for user information
-        cy.fixture('userData').then((user) => {
+        cy.fixture('userRegister').then((user) => {
             cy.get('[data-qa="signup-name"]').type(user.name)
             cy.get('[data-qa="signup-email"]').type(user.email)
             cy.get('[data-qa="signup-button"]').click()

@@ -1,4 +1,4 @@
-describe('Valid Login', () => {
+describe('Login User with incorrect email and password', () => {
 
     it('checks if the home page is visible successfully', () => {
         // Navigate to the URL
@@ -21,20 +21,17 @@ describe('Valid Login', () => {
           .should('be.visible')
     })
 
-    it.only('the user enters their incorrect email and password', () => {
+    it('the user enters their incorrect email and password', () => {
         cy.visit('https://automationexercise.com/login')
 
         // Use data from the fixture for user information
-        cy.fixture('userValid').then((user) => {
+        cy.fixture('userResgiter').then((user) => {
             cy.get('[data-qa="login-email"]').type(user.email)
             cy.get('[data-qa="login-password"]').type(user.password)
             cy.get('[data-qa="login-button"]').click()
 
             // Verify that 'ENTER ACCOUNT INFORMATION' is visible
-            cy.get(':nth-child(10) > a').should('be.visible')
+            cy.contains('Your email or password is incorrect!').should('be.visible')
         })
-
-        //9. Click 'Delete Account' button
-        //10. Verify that 'ACCOUNT DELETED!' is visible
     })
 })

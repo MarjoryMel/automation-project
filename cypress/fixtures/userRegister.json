@@ -1,17 +1,17 @@
 {
-    "name": "Test",
-    "email": "vabafik330@mvpalace.com",
-    "password": "test123",
+    "name": "John Doe",
+    "email": "ultimoteste@example.com",
+    "password": "securePassword123",
     "subject": "Interesting Resource for Your Review",
     "message":"I wanted to share an interesting resource that might be very useful for your review",
     "birthDate": {
-      "day": "4",
-      "month": "4",
-      "year": "2001"
+      "day": "1",
+      "month": "1",
+      "year": "1990"
     },
-    "addressInfo": {
-        "firstName": "Test",
-        "lastName": "Test",
+      "addressInfo": {
+        "firstName": "John",
+        "lastName": "Doe",
         "company": "Example Corp",
         "address": "123 Main St",
         "address2": "Apt 4B",
@@ -19,7 +19,7 @@
         "state": "Maharashtra",
         "city": "Mumbai",
         "zipcode": "400001",
-        "mobileNumber": "+919999999"
+        "mobileNumber": "+919876543210"
       }
 }
   
