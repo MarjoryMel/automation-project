@@ -21,7 +21,7 @@ describe('Register User with existing email', () => {
           .should('be.visible')
     })
 
-    it.only('the user enters their name and email', () => {
+    it('the user enters their name and email', () => {
         cy.visit('https://automationexercise.com/login')
 
         //Enter name and already registered email address

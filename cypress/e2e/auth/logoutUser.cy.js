@@ -21,7 +21,7 @@ describe('Logout User', () => {
           .should('be.visible')
     })
 
-    it.only('the user enters their incorrect email and password', () => {
+    it('the user enters their incorrect email and password', () => {
         cy.visit('https://automationexercise.com/login')
 
         // Use data from the fixture for user information

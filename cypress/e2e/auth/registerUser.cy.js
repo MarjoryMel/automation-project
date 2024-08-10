@@ -21,7 +21,7 @@ describe('Register User', () => {
           .should('be.visible')
     })
 
-    it.only('the user enters their name and email', () => {
+    it('the user enters their name and email', () => {
         cy.visit('https://automationexercise.com/login')
 
         // Use data from the fixture for user information
