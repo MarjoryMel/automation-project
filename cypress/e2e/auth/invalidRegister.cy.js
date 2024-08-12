@@ -25,7 +25,7 @@ describe('Register User with existing email', () => {
         cy.visit('https://automationexercise.com/login')
 
         //Enter name and already registered email address
-        cy.fixture('userValid').then((user) => {
+        cy.fixture('validUser').then((user) => {
             cy.get('[data-qa="signup-name"]').type(user.name)
             cy.get('[data-qa="signup-email"]').type(user.email)
             cy.get('[data-qa="signup-button"]').click()

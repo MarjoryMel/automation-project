@@ -25,7 +25,7 @@ describe('Register User', () => {
         cy.visit('https://automationexercise.com/login')
 
         // Use data from the fixture for user information
-        cy.fixture('userRegister').then((user) => {
+        cy.fixture('registerUser').then((user) => {
             cy.get('[data-qa="signup-name"]').type(user.name)
             cy.get('[data-qa="signup-email"]').type(user.email)
             cy.get('[data-qa="signup-button"]').click()
@@ -52,7 +52,7 @@ describe('Register User', () => {
           .should('not.be.checked')
 
         // Use data from the fixture for address information
-        cy.fixture('userAddress').then((data) => {
+        cy.fixture('registerUser').then((data) => {
             const addressInfo = data.addressInfo;
 
             // Fill in address details

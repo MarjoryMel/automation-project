@@ -25,7 +25,7 @@ describe('Login User with correct email and password', () => {
         cy.visit('https://automationexercise.com/login')
 
         // Use data from the fixture for user information
-        cy.fixture('userValid').then((user) => {
+        cy.fixture('validUser').then((user) => {
             cy.get('[data-qa="login-email"]').type(user.email)
             cy.get('[data-qa="login-password"]').type(user.password)
             cy.get('[data-qa="login-button"]').click()
