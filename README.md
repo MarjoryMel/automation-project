@@ -55,7 +55,7 @@ Os testes são baseados nos [casos de teste](https://automationexercise.com/test
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/MarjoryMel/automation-project
+   git clone https://github.com/marjorymell/automation-project
 
 2. Instale as dependências:
 
